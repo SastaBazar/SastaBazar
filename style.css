@@ -7,6 +7,11 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#coverImg {
+	width: 90%;
+	height: 400px;
+}
+
 #logo {
     width: 300px;
     height: 300px;
@@ -14,18 +19,17 @@ body {
 }
 
 #contents {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-#button {
+#btnShopNow {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 10rem;
     height: 2rem;
     border: 2px #800080 solid;
@@ -36,9 +40,39 @@ body {
     background-color: #ffffcc;
 }
 
-#button:hover {
+#btnShopNow:hover {
     font-weight: 800;
     color: #ffffcc;
     background-color: #800080;
     box-shadow: 3px 3px 6px blue, 10px 10px 20px black;
+}
+
+#btnWhatsApp:hover {
+	border-radius: 0.8rem;
+    box-shadow: 6px 6px 6px #63e092, 10px 10px 20px black;
+}
+
+/* ============== width media queries: 1200px, 1000px, 800px =============== */
+
+@media(max-width: 1200px) {
+    .para {
+        font-size: medium;
+    }
+}
+
+@media(max-width: 1000px) {
+    .para {
+        font-size: smaller;
+    }
+}
+
+@media(max-width: 800px) {
+    .para {
+        font-size: small;
+    }
+
+    #logo {
+        width: 200px;
+        height: 200px;
+    }
 }
