@@ -1,83 +1,105 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #800080;
-    font-size: larger;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-#coverImg {
-	width: 90%;
-	height: 400px;
-}
-
-#logo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-#contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.para {
-    margin-bottom: 1rem;
-}
-
-#btnShopNow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    height: 2rem;
-    margin-bottom: 1rem;
-    border: 2px #800080 solid;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 750;
-    color: #800080;
-    background-color: #ffffcc;
-}
-
-#btnShopNow:hover {
-    font-weight: 800;
-    color: #ffffcc;
-    background-color: #800080;
-    box-shadow: 3px 3px 6px blue, 10px 10px 20px black;
-}
-
-#btnWhatsApp:hover {
-	border-radius: 0.8rem;
-    box-shadow: 6px 6px 6px #63e092, 10px 10px 20px black;
-}
-
-/* ============== width media queries: 1200px, 1000px, 800px =============== */
-
-@media(max-width: 1200px) {
-    .para {
-        font-size: medium;
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #800080;
+        font-size: larger;
+        font-family:Arial, Helvetica, sans-serif;
     }
-}
 
-@media(max-width: 1000px) {
-    .para {
-        font-size: smaller;
-    }
-}
-
-@media(max-width: 800px) {
-    .para {
-        font-size: small;
+    #coverImg {
+        width: 90%;
+        height: 400px;
     }
 
     #logo {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
     }
-}
+
+    #contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .para {
+        margin-bottom: 1rem;
+    }
+
+    #btnShopNow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        border: 2px #800080 solid;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 750;
+        color: #800080;
+        background-color: #ffffcc;
+    }
+
+    #btnShopNow:hover {
+        font-weight: 800;
+        color: #ffffcc;
+        background-color: #800080;
+        box-shadow: 3px 3px 6px blue, 10px 10px 20px black;
+    }
+
+    #btnWhatsApp:hover {
+        border-radius: 0.8rem;
+        box-shadow: 6px 6px 6px #63e092, 10px 10px 20px black;
+    }
+
+    /* ============== max-width media queries: 1200px, 1000px, 800px =============== */
+
+    @media(max-width: 1200px) {
+        .para {
+            font-size: medium;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        .para {
+            font-size: smaller;
+        }
+    }
+
+    @media(max-width: 800px) {
+        .para {
+            font-size: small;
+        }
+
+        #logo {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    /* ============== height media queries: 450px =============== */
+
+    @media(max-height: 450px) {
+        #logo {
+            width: 150px;
+            height: 150px;
+        }
+
+        #btnShopNow {
+            width: 7rem;
+            height: 1.5rem;
+            border: 1px #800080 solid;
+            font-weight: 200;
+            font-size: medium;
+        }
+
+        #btnWhatsApp {
+            width: 10rem;
+            height: 2rem;
+        }
+    }
