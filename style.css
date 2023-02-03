@@ -57,6 +57,10 @@
         box-shadow: 6px 6px 6px #63e092, 10px 10px 20px black;
     }
 
+    #mobileApp {
+		padding-top: 100px;
+	}
+
     /* ============== max-width media queries: 1200px, 1000px, 800px =============== */
 
     @media(max-width: 1200px) {
